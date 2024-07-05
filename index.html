@@ -1,91 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelas Personal Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MD_UmarFarooq</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <!-- link for fonts from googlefonts.com -->
+    <!-- if users dont have already these fonts installed then the browser will take them to this location and grab those fonts for them -->
+    <!-- down two links common for all font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- link for merriweather -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- link for sacramento family -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<!-- link for montserrat family -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td>
-                <!-- circle crop online -->
-                <img src="Images/cropped_image (1).png" alt="amazon forest" width="300" height="200">
-            </td>
-            <td>
-                <h1>Angela Yu</h1>
-                <p><em>Founder and CTO of the <strong> <a href="https://www.appbrewery.com/"> App Brewery</a> </strong>
-                    </em></p>
-                <p>I am an iOS and Web Developer. I love coffee and brew my own beers.</p>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Books and Teaching</h3>
-    <ul>
-        <li>The Complete iOS App Development Bootcamp</li>
-        <li>The Complete Web Development Bootcamp </li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="20">
-        <thead>
-            <th>Dates</th>
-            <th>Work</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2010-2013</td>
-                <td>Lead Developer at Tempo App</td>
-            </tr>
-            <tr>
-                <td>2013</td>
-                <td>Researcher at The Institute of Cognitive Neurosciences</td>
-            </tr>
-        </tbody>
-
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <!-- nested table -->
-    <table border="1" cellspacing="5">
-        <td>
-            <table>
-                <tr>
-                    <td>iOS Development</td>
-                    <td>🌟🌟🌟🌟🌟</td>
-                </tr>
-                <tr>
-                    <td>Web Development</td>
-                    <td>🌟🌟</td>
-                </tr>
-            </table>
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <td>Photography</td>
-                    <td>🌟🌟</td>
-                </tr>
-                <tr>
-                    <td>Painting</td>
-                    <td>🌟</td>
-                </tr>
-            </table>
-
-        </td>
-    </table>
-
-
-
-
-
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact-me.html">Contact Me</a>
+    <div class="top-container">
+        <img src="images/cloud.png" class="top-cloud" alt="cloud-img">
+        <h1>I'm MD_UmarFarooq</h1>
+        <h2 id="h2_1">a webdesigner</h2>
+        <img src="images/cloud.png" class="bottom-cloud" alt="cloud-img">
+        <img src="images/mountain.png" alt="mountain-img">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img src="images/people.png" alt="" width="200px" height="200px">
+          <h2>Hello.</h2>
+          <p id="intro-para">Iam a student and webdeveloper.I'm an undergraduate.I love learning specific category facts.  </p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="design-img" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXMxcTBhZ3p1eTJ6bW43aGRtdTY1bTFrMjExcXR4ajhrbjByNGd6byZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/QssGEmpkyEOhBCb7e1/giphy.gif" alt="">
+            <h3>Design & Development</h3>
+            <p class="design-para">I started learning code when i was 17 years old in diploma because i have to choose a way of earning income.Over time,i have gained wealth of experience designing and developing mobile and web applications. </p>
+          </div>
+          <div class="skill-row">
+            <img class="sports-img" src="https://media.giphy.com/media/o5t72VZ2oY7dxn9v8u/giphy.gif?cid=790b7611vllix9n441h8kmimxji1ishe0ywj4qp817okqyks&ep=v1_gifs_search&rid=giphy.gif&ct=g"  alt="">
+            <h3>Playing Sports</h3>
+            <p class="sports-para">But i also have skill in playing sports for entertainment and stress relief.Cricket and football are my favourite sports. </p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3> For more details about WebDesigning</h3>
+          <p class="quotes">"Responsive Web Design always plays an important role whenever going to promote your website." <br>
+          "Design is not just what it looks like and feels like. Design is how it works."</p>
+          <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href=file:///home/sadiq/Documents/Web%20Development/CSS-MySite/index.html>Website</a>
+        <p class="copr ">© 2024 MD_UmarFarooq.</p>
+      </div>
 </body>
 
 </html>
