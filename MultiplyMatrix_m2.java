@@ -28,6 +28,7 @@ class MatrixMul_m2
         int C[][]=new int[MAX][MAX];
         
         // check if multiplication is possible
+       // To multiply any 2 matrices [no.of columns of 1st matrix == no.of rows of 2nd matrix]
         if(col1 != row2)
         {
             System.out.println("Multiplication not possible");
@@ -35,11 +36,13 @@ class MatrixMul_m2
         }
         
         // multiply the two matrices
+        // Resultant matrix size [no.of rows of 1st matrix and no.of columns of 2nd matrix]
         for(i=0;i<row1;i++)
         {
             for(j=0;j<col2;j++)
             {
                 C[i][j]=0;
+                // k value should be either no.of columns of 1st matrix (or) no.of rows of 2nd matrix
                 for(k=0;k<=row2;k++)
                 {
                     C[i][j] += A[i][k] * B[k][j];
@@ -68,10 +71,8 @@ class MatrixMul_m2
         // Read size of matrix A from user
         System.out.println("Enter the row size of 1st matrix:");
         m1rowsize=sc.nextInt();
-        System.out.println(m1rowsize);
         System.out.println("Enter the column size of 1st matrix:");
         m1colsize=sc.nextInt();
-        System.out.println(m1colsize);
         
         // Read the elements of matrix A from user
         for(i=0;i<m1rowsize;i++)
@@ -80,7 +81,6 @@ class MatrixMul_m2
             {
                 System.out.println("A["+ i +"]["+ j +"]: ");
                 A[i][j]=sc.nextInt();
-                System.out.println(A[i][j]);
             }
         }
         
@@ -88,10 +88,8 @@ class MatrixMul_m2
          // Read size of matrix B from user
         System.out.println("Enter the row size of 2nd matrix:");
         m2rowsize=sc.nextInt();
-        System.out.println(m2rowsize);
         System.out.println("Enter the column size of 2nd matrix:");
         m2colsize=sc.nextInt();
-        System.out.println(m2colsize);
         
         // Read the elements of matrix B from user
         for(i=0;i<m2rowsize;i++)
@@ -100,7 +98,6 @@ class MatrixMul_m2
             {
                 System.out.println("B["+ i +"]["+ j +"]: ");
                 B[i][j]=sc.nextInt();
-                System.out.println(B[i][j]);
             }
         }
         
