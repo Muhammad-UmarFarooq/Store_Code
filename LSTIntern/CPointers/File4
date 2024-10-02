@@ -1,0 +1,31 @@
+
+//3
+#include<stdio.h>
+int main(){
+    int sample()
+    {
+        int a;
+        return &a;
+    }
+    // dangling pointer
+    // is a pointer which is holding address of another pointer which is deleted
+    int *ptr=sample();
+    printf("the value of a cant be printed here %d\n",*ptr);
+    // printf("value of ptr is %d\n",ptr);
+    // printf("the value of a through pointer %d\n",*ptr);
+    
+    
+return 0;
+}
+/*
+/tmp/5TIqYIcDSn.c: In function 'sample':
+/tmp/5TIqYIcDSn.c:6:16: warning: returning 'int *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+    6 |         return &a;
+      |                ^~
+/tmp/5TIqYIcDSn.c: In function 'main':
+/tmp/5TIqYIcDSn.c:9:14: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+    9 |     int *ptr=sample();
+      |              ^~~~~~
+/tmp/5TIqYIcDSn.o
+Segmentation fault 
+*/
