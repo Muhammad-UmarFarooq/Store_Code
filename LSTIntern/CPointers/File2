@@ -1,0 +1,24 @@
+//2
+#include<stdio.h>
+int main(){
+    
+    // wild pointer
+    int a=10;
+    int *ptr=10;//here 10 is assumed to be an address
+    printf("value of ptr is %d\n",ptr);
+    printf("the value at the address 10 is %d\n",*ptr);
+    
+    
+return 0;
+}
+/*output 
+ /tmp/lWeFWFFE4C.c: In function 'main':
+/tmp/lWeFWFFE4C.c:6:14: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+    6 |     int *ptr=10;//here 10 is assumed tobe an address
+      |              ^~
+/tmp/lWeFWFFE4C.o
+value of ptr is 10
+Segmentation fault
+
+*/
+
