@@ -1,6 +1,64 @@
-1. Which of the following keywords is used to exit a loop early?
+1.  Which of the following keywords is used to exit a loop early?
 return
 exit
 break
 continue
 Other:
+
+2.  What does the following C code do? 
+c 
+Copy code 
+int arr[ ] = {10, 20, 30}; 
+int *ptr = arr; 
+printf("%d", *(ptr + 2)); 
+*
+Prints 10
+Prints 20
+Prints 30
+Compilation Error
+Other:
+
+3.   Which of the following is true about pointers?   
+*
+Pointers can hold address of any type.
+Pointers can only hold address of integer types.
+Pointers are not allowed in C.
+Pointers must be dereferenced before use.
+Other:
+
+4.  Given int arr[5] = {1, 2, 3, 4, 5};, which of the following statements is correct?  
+*
+arr is a pointer to the first element of the array.
+arr is a pointer to the entire array.
+arr holds the size of the array.
+arr is not a pointer.
+Other:
+
+5.  What is the output of the following code? 
+c 
+Copy code 
+int arr[] = {1, 2, 3, 4}; 
+int *ptr = arr; 
+printf("%d", *(ptr + 1));  
+*
+1
+2
+3
+4
+Other:
+
+6.  If arr is an array of 10 integers, what is the type of arr in the expression arr + 1?  
+*
+int
+int *
+int [ ]
+int **
+Other
+
+7.  Which of the following correctly accesses the 4th element of an array arr using pointers?  
+*
+*(arr + 3)
+arr[4]
+*arr[3]
+*(arr + 4)
+Other
