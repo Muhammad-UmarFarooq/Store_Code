@@ -4,21 +4,22 @@ int main(){
     
     // wild pointer
     int a=10;
-    int *ptr=10;//here 10 is assumed to be an address
+    // directly assigning value to a pointer is not allowed
+    int *ptr=10;//here 10 is assumed to be an address by the compiler
     printf("value of ptr is %d\n",ptr);
+//as long as you try to access the value of ptr it is allowed
+//but the moment u try to access the value at  address 10  it shows segmentation fault  
     printf("the value at the address 10 is %d\n",*ptr);
     
     
 return 0;
 }
 /*output 
- /tmp/lWeFWFFE4C.c: In function 'main':
-/tmp/lWeFWFFE4C.c:6:14: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+ In function 'main':
+ warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
     6 |     int *ptr=10;//here 10 is assumed tobe an address
-      |              ^~
-/tmp/lWeFWFFE4C.o
 value of ptr is 10
-Segmentation fault
+Segmentation fault//means you are trying to access an address which is not part of the program
 
 */
 
