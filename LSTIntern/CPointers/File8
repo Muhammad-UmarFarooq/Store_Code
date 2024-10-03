@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int a='A';
+int *ptr=&a;
+printf("address of a is %d\n",ptr);
+printf("the value of entered is %d",*ptr);
+return 0;
+}
+/*
+output
+address of a is -400303068
+the value of entered is 65
+*/
