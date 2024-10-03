@@ -1,0 +1,17 @@
+//6
+//pointer to pointer -a pointer that stores the address of another pointer
+//it is mostly used in matrices and multidimensional arrays
+#include<stdio.h>
+int main()
+{
+int a=10;
+int *ptr1=&a;
+//**ptr2 is a pointer to pointer i.e. it stores address of another pointer
+int **ptr2=&ptr1;
+printf("address of ptr1 is %d\n",&ptr1);
+printf("value of a through ptr1 is %d\n",*ptr1);
+printf("the value of ptr2 is %d\n",ptr2);
+//*ptr2 refers 1st pointer --  **ptr2 refers to 2nd pointer
+printf("value of a through ptr2 is %d\n",**ptr2);
+return 0;
+}
