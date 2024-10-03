@@ -4,5 +4,5 @@ File3  --  Wild pointer
 File4  --  Dangling pointer
 File5  --  Null pointer
 File6  --  Pointer to pointer
-File7  --  Incrementing the address
+File7  --  Incrementing the address & accessing the value
 File8  --  Assigning char to int var. & accessing
