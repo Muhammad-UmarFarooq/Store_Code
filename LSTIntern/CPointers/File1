@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int a=10;
+int *ptr=&a;
+printf("address of a  %d\n",&a);
+printf("value of ptr %d\n",ptr);
+printf("value of a %d\n",a);
+printf("value of a through pointer %d\n",*ptr);
+}
+/*
+output:
+address of a  1240799380
+value of ptr 1240799380
+value of a 10
+value of a through pointer 10
