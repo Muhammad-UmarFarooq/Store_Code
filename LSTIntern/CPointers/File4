@@ -2,7 +2,8 @@
 //3
 #include<stdio.h>
 int main(){
-//the function name should be the eturn type i.e *sample
+//the function name should be the return type i.e *sample
+//*sample means it is returning an address
     int *sample()
     {
         int a;
