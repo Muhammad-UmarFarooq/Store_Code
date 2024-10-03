@@ -1,14 +1,24 @@
+//incrementing address var. and accessing it
 #include<stdio.h>
 int main()
 {
 int a=10;
 int *ptr=&a;
 printf("address of a is %d\n",ptr);
-printf("the value of the ptr after got incremented is %d",ptr+1);
+printf("the value of the ptr after got incremented is %d\n",ptr+1);
+// in below line it shows some garbage value or its showing address of a
+printf("the value at incremented address is %d\n",*( ptr + 1));
+//when we added 2 then its showing garbage value
+printf("the value at incremented address is %d\n",*( ptr + 2));
+
 return 0;
 }
-/*
-output
-address of a is 1325137828
-the value of the ptr after got incremented is 1325137832
+
+/* output
+address of a is 2095389668
+the value of the ptr after got incremented is 2095389672
+the value at incremented address is 2095389668
+the value at incremented address is 32767
+
+
 */
