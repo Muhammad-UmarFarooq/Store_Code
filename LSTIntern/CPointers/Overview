@@ -3,4 +3,4 @@ File2  --  Double pointer
 File3  --  Wild pointer  
 File4  --  Dangling pointer
 File5  --  Null pointer
-File6  --  
+File6  --  Pointer to pointer
