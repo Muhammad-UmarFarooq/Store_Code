@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+//null pointer
+/*
+   //we not assigned any value to ptr1 but it shows points to some garbage value
+   int *ptr1;
+   printf("%d\n",ptr1);
+   //if we try to access the value of address of ptr1 i.e garbage value it shows segmentation fault
+   printf("%d\n",*ptr1);
+*/
+//so its always better u assign a NULL value
+   int *ptr1 = NULL;
+   printf("%d\n",ptr1);
+   printf("%d\n",*ptr1);
+
+}
+/*
+output
+0
+Segmentation fault
+*/
