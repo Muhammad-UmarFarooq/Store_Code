@@ -8,10 +8,21 @@ int a=10;
 int *ptr1=&a;
 //**ptr2 is a pointer to pointer i.e. it stores address of another pointer
 int **ptr2=&ptr1;
+printf("address of a is %d\n",&a);
 printf("address of ptr1 is %d\n",&ptr1);
 printf("value of a through ptr1 is %d\n",*ptr1);
 printf("the value of ptr2 is %d\n",ptr2);
+
 //*ptr2 refers 1st pointer --  **ptr2 refers to 2nd pointer
+printf("value of ptr1 through ptr2 %d\n",*ptr2);
 printf("value of a through ptr2 is %d\n",**ptr2);
 return 0;
 }
+/*
+address of a is 328573060
+address of ptr1 is 328573048
+value of a through ptr1 is 10
+the value of ptr2 is 328573048
+value of ptr1 through ptr2 328573060
+value of a through ptr2 is 10
+*/
