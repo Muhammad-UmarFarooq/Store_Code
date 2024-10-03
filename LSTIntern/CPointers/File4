@@ -2,7 +2,8 @@
 //3
 #include<stdio.h>
 int main(){
-    int sample()
+//the function name should be the eturn type i.e *sample
+    int *sample()
     {
         int a;
         return &a;
@@ -18,14 +19,11 @@ int main(){
 return 0;
 }
 /*
-/tmp/5TIqYIcDSn.c: In function 'sample':
-/tmp/5TIqYIcDSn.c:6:16: warning: returning 'int *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
-    6 |         return &a;
-      |                ^~
-/tmp/5TIqYIcDSn.c: In function 'main':
-/tmp/5TIqYIcDSn.c:9:14: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
-    9 |     int *ptr=sample();
-      |              ^~~~~~
-/tmp/5TIqYIcDSn.o
-Segmentation fault 
+output:
+/tmp/O9OOUOUdfD.c: In function 'sample':
+/tmp/O9OOUOUdfD.c:9:16: warning: function returns address of local variable [-Wreturn-local-addr]
+    9 |         return &a;
+      |  
+/tmp/O9OOUOUdfD.o
+Segmentation fault
 */
