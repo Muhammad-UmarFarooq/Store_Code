@@ -1,4 +1,4 @@
-//1
+//2
 #include<stdio.h>
 int main(){
     int a=10;
@@ -8,9 +8,15 @@ int main(){
        printf("the value of a through ptr1 is %d\n",*ptr1);       
        printf("the value of a through ptr1 is %d\n",*ptr2);
        // ways of updating
-       // *ptr1=20;
+       *ptr1=20;
        // *ptr1=*ptr1+1;
        printf("the value of a after updated is %d\n",a);
        
 return 0;
 }
+/*
+output
+the value of a through ptr1 is 10
+the value of a through ptr1 is 10
+the value of a after updated is 20
+*/
