@@ -1,0 +1,24 @@
+// Arrays
+#include <stdio.h>
+
+int main() {
+     int arr[10];
+     arr[0]=10;
+     arr[1]=20;
+     arr[3]=30;
+     printf("the 1st element is %d\n",arr[0]);
+     printf("the address of arr is %d\n",arr);
+     printf("the address of arr 2nd element is %d\n",arr+1);
+
+     printf("the 2nd element is %d\n",*(arr+1));
+     printf("the 1st element is %d\n",*(arr));
+    return 0;
+}
+/*
+output:
+the 1st element is 10
+the address of arr is 1166479856
+the address of arr 2nd element is 1166479860
+the 2nd element is 20
+the 1st element is 10
+*/
