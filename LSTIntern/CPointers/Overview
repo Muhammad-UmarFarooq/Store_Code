@@ -7,3 +7,4 @@ File6  --  Pointer to pointer
 File7  --  Incrementing the address & accessing the value
 File8  --  Assigning char to int var. & accessing
 File9  --  Array declare & access
+File10 --  Linked list
