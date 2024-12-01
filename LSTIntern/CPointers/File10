@@ -1,0 +1,34 @@
+//Linked list
+
+#include <stdio.h>
+
+//Define a node structure
+ // we defined node structure outside function so that it is accessible to all functions
+ struct Node{
+     int data;
+     struct Node* next;
+ };//upto here we only declared a structure or a template but memory is not allocated
+
+int main() {
+
+//Declare 5 nodes statically
+ struct Node node1,node2,node3,node4,node5;
+
+//Assign data to each node and link them
+ node1.data = 10;
+ node1.next = &node2;
+ 
+ node2.data = 20;
+ node2.next = &node3;
+ 
+  node3.data = 30;
+ node3.next = &node4;
+ 
+  node4.data = 40;
+ node4.next = &node5;
+ 
+  node5.data = 50;
+ node5.next = &node3;
+ 
+    return 0;
+}
