@@ -28,7 +28,24 @@ int main() {
  node4.next = &node5;
  
   node5.data = 50;
- node5.next = &node3;
+ node5.next = NULL;//Last node points to NULL
  
-    return 0;
+ //Start from the head node and print the list
+ struct Node* head = &node1;
+
+//Since we cant move head ptr so we declare another ptr current so that it can be used to traverse the nodes
+ struct Node* current = head;
+
+//Traverse and display the linked list
+ while(current != NULL){
+     printf("%d -> ", current->data);
+     current = current->next;
+ }
+
+printf("NULL \n");
+return 0;
 }
+
+output:
+
+10 -> 20 -> 30 -> 40 -> 50 -> NULL 
