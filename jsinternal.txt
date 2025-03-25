@@ -1,0 +1,132 @@
+7)
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: auto;
+        }
+        
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text">This is the original paragraph.</p>
+    <img id="image" src="/home/vit-09/Documents/istockphoto-1293325404-612x612.jpg" alt="This is a view of SauduArabia City">
+    <br><br>
+    <button onclick="fun()">Click to change the content</button>
+    <script>
+        function fun() {
+            document.getElementById('text').innerText = 'The para has been updated';
+            document.getElementById('image').src = '/home/vit-09/Documents/shutterstock_621278474v2.jpg';
+        }
+    </script>
+</body>
+
+</html>
+
+8)
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JS Window Object Example</h2>
+    <button onclick="fun1()">Open new window</button>
+    <button onclick="fun2()">Show alert</button>
+    <button onclick="fun3()">Get window dimensions</button>
+    <p id="para"></p>
+    <script>
+        function fun1() {
+            let newwindow = window.open("https://www.google.co.in/", '_blank ', 'width=600,height=400');
+        }
+
+        function fun2() {
+            window.alert('This is an alert message');
+        }
+
+        function fun3() {
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            document.getElementById('para').innerText = `Window width: ${width}px, Height: ${height}px `;
+
+        }
+    </script>
+
+</body>
+
+
+</html>
+
+9)
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Use defined objects </h1>
+    <button onclick="fun()">Show User Details</button>
+    <p id="para"></p>
+    <script>
+        class User {
+            constructor(name, age, email) {
+                this.name = name;
+                this.age = age;
+                this.email = email;
+            }
+            greet() {
+                return `Hello, my ame is ${this.name}.`;
+            }
+            get userAge() {
+
+                return this.age;
+            }
+            set userAge(newAge) {
+                if (newAge > 0) {
+                    this.age = newAge;
+                } else {
+
+                    console.error('Age must be a positive number.');
+                }
+            }
+            getDetails() {
+                return `Name: ${this.name}, Age: ${this.age}, Email: ${this.email}`;
+            }
+        }
+        let user1 = new User('Umar', '20', 'umar0508@gmail.com');
+
+        function fun() {
+            document.getElementById('para').innerText = user1.getDetails();
+            user1.userAge = 30;
+            console.log(user1.getDetails());
+        }
+    </script>
+</body>
+
+</html>
